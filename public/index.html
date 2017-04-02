@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EXPRESS APP</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="page-header"><H3>EXPRESS CRUD OPERATIONS</H3></div>
+
+        <div class="row">
+            <!-- CREATE USER -->
+            <div class="col-md-6">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">CREATE USER</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="userform">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" class="form-control" id="email" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input type="text" class="form-control" id="phone" name="phone">
+                            </div>
+                            <!--<div class="form-group">-->
+                                <!--<label for="password">Password</label>-->
+                                <!--<input type="text" class="form-control" id="password" name="password">-->
+                            <!--</div>-->
+                        </form>
+                        <button type="button" class="btn btn-primary" id="addUser">Save</button>
+                    </div>
+                </div>
+            </div><!-- /col-md-6 -->
+            <!-- UPDATE USER -->
+            <div class="col-md-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">UPDATE USER</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="updateUserForm">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" name="name">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="text" class="form-control" name="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" class="form-control" name="phone">
+                            </div>
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input type="text" class="form-control" name="id">
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-primary" id="updateUser">Update</button>
+                    </div>
+                </div>
+            </div><!-- /col-md-6 -->
+            <!-- GET USER -->
+            <div class="col-md-6">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">GET USER BY ID</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="getUserByIdform">
+                            <div class="form-group">
+                                <label for="userId">ID</label>
+                                <input type="text" class="form-control" id="userId" name="userId">
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-primary" id="getUserByIdBut">Save</button>
+                    </div>
+                </div>
+            </div><!-- /col-md-6 -->
+            <!-- DELETE USER -->
+            <div class="col-md-6">
+                <div class="panel panel-danger">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">DELETE USER</h3>
+                    </div>
+                    <div class="panel-body">
+                        <form id="deleteUserForm">
+                            <div class="form-group">
+                                <label>ID</label>
+                                <input type="text" class="form-control" name="id" id="idUserToDelete">
+                            </div>
+                        </form>
+                        <button type="button" class="btn btn-danger" id="deleteUserBut">DELETE</button>
+                    </div>
+                </div>
+            </div><!-- /col-md-6 -->
+        </div><!-- /row -->
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="result-wrap">
+                    <table id="result" class="table">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>_id</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <!-- tr -->
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
